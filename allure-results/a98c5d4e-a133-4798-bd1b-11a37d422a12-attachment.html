@@ -1,0 +1,39 @@
+<div>POST to http://localhost:8081/student</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;firstName&quot;: &quot;Jaleesa&quot;,
+    &quot;lastName&quot;: &quot;Rolfson&quot;,
+    &quot;email&quot;: &quot;gerda.schumm@yahoo.com&quot;,
+    &quot;programme&quot;: &quot;Computer Science&quot;,
+    &quot;courses&quot;: [
+        &quot;JADE&quot;,
+        &quot;XSLT – see XPath&quot;
+    ]
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://localhost:8081/student&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;firstName&quot;: &quot;Jaleesa&quot;,
+    &quot;lastName&quot;: &quot;Rolfson&quot;,
+    &quot;email&quot;: &quot;gerda.schumm@yahoo.com&quot;,
+    &quot;programme&quot;: &quot;Computer Science&quot;,
+    &quot;courses&quot;: [
+        &quot;JADE&quot;,
+        &quot;XSLT – see XPath&quot;
+    ]
+}&#39;
+</div>
