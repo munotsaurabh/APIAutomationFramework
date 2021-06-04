@@ -11,6 +11,7 @@ import static io.restassured.RestAssured.given;
 
 public class RestClient extends TestBase {
 
+
     public Response doGetRequest(String endpoint){
 
         return given()
